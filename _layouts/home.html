@@ -1,0 +1,51 @@
+{% comment %} Liquid comments are written like this {% endcomment %}
+{% include home_head.html %}
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 nomobile">
+          <!-- <h2 class="about-section"> About </h2> -->
+          <p class="about-description"> Hi! This is a work in progress blog I created in June 2020. The website is based on Jekyll, although I decided to modify the defaults to learn some web-design while constructing it. <br> Currently, there are only a few jupyter notebooks here, but I am planning to add more content, including some long-term projects. <br> 	&copy; <a href="https://github.com/m-julian">m-julian</a></p>
+          <ul class="my-links">
+            <li class="my-links"><a href="https://github.com/m-julian"><i class="fab fa-github fa-3x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-8" id="all-posts">
+          <h1 class="display-4" id="all-posts-title">Recent Posts</h1>
+          <!--loop over collections and get first post in each collection-->
+          {% for collection in site.collections %}
+          {% assign sorted = site[collection.label] | sort: 'date' | reverse %}
+              {% for post in sorted limit:2 %}
+              {% if forloop.length != 0 and post.image != "/assets/images/default_image.png" %}
+                <div class="clearfix individual-post">
+                <a href="{{post.url}}"> <!--or try post.path -->
+                <img class="post-image" src="{{post.image}}" alt="Responsive image" />
+                </a>
+                <h3>{{ post.date | date_to_long_string}}</h3>
+                <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                <p>{{post.description}}</p>
+                </div>
+              {% elsif forloop.length != 0 and post.image == "/assets/images/default_image.png" %}
+              <div class="clearfix individual-post">
+                <img class="post-image" src="{{post.image}}" alt="Responsive image" id="blank-post-image"/>
+                <h3>{{ post.date | date_to_long_string}}</h3>
+                <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                <p>{{post.description}}</p>
+                </div>
+              {% else %}
+              <div class="clearfix individual-post">
+                <h3>{{ post.date | date_to_long_string}}</h3>
+                <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                <p>{{post.description}}</p>
+                </div>
+                {% endif %}
+              {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="col-3 nomobile">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

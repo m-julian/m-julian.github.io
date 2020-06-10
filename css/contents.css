@@ -1,0 +1,27 @@
+ /* This css file is for pages in the contents folder that serve as a table of contents for notebooks and projects. */
+ 
+@import "global.css";
+
+/* fontawesome padding */
+i.fas{
+    padding-right: 0.5em;
+}
+
+div.container{
+    margin-top: 1.5em;
+}
+
+p.content-description{
+    color: #0e8a22;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+ul.content-list{
+    padding-left: 0px;
+}
+
+li.content{
+    font-size: 1.3em;
+    list-style: none;
+}

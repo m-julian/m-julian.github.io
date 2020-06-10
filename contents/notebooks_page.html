@@ -1,0 +1,38 @@
+---
+layout: contents
+title: Jupyter Notebooks
+description: This page contains all of the jupyter notebooks, sorted by categories.
+permalink: /notebooks/
+---
+
+
+{% assign cats =  site.notebooks | map: 'categories' | join: ','  | split: ',' | uniq %}
+{% for cat in cats %}
+  <h2 class="content-title">{{ cat }}</h2>
+  <ul class="content-list">
+  {% for notebook in site.notebooks %}
+    {% if notebook.categories contains cat %}
+    <li class="content">{{notebook.date | date_to_long_string}}
+      <a href="{{ site.baseurl }}{{ notebook.url }}">{{notebook.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+
+
+{% comment %}
+<!-- This is for tags -->
+{% assign tags =  site.notebooks | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in tags %}
+  <h3>{{ tag }}</h3>
+  <ul>
+  {% for post in site.notebooks %}
+    {% if notebook.tags contains tag %}
+    {{notebook.date | date_to_long_string}}
+    <a href="{{ site.baseurl }}{{ note.url }}">{{ notebook.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+{% endcomment %}

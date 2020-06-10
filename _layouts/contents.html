@@ -1,0 +1,11 @@
+{% include contents_head.html %}
+{% comment %} This layout is for creating table of contents pages for various site pages such as categories, projects, etc. {% endcomment %}
+
+  <body>
+    <div class="container text-center">
+    <h1> {{page.title}}</h1>
+    <p class="content-description">{{page.description}}</p>
+    {{content}}
+    </div>
+  </body>
+</html>

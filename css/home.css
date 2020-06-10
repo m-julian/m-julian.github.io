@@ -1,0 +1,269 @@
+ /* Default style sheet for all pages, style sheets for posts and other pages are going to be added separately  */
+
+@import "global.css";
+
+/* DESKTOP CONFIG */
+
+/* fontawesome padding */
+i.fas{
+  padding-right: 0.5em;
+}
+
+ /* DESKTOP and tablet CONFIG  */
+
+ /* recent posts title */
+#all-posts-title{
+   font-size: 2.5rem; 
+  margin: auto;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+.individual-post{
+  margin-bottom: 2em;
+}
+
+ /* image that appears next to post on home page */
+img.post-image{
+  height: 200px;
+  width: 200px;
+  border-radius: 15px 50px;
+  float: left;
+  margin-right: 1em;
+}
+
+
+ /* blank image in case post does not have image */
+img.blank-post-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px 50px;
+  float: left;
+  margin-right: 1em;
+}
+
+
+ /* clearfix to align image on the left hand side of post */
+.clearfix{
+  overflow: auto;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  border-collapse: separate;
+  display: table;
+}
+
+
+ /* about section on the left hand side of recent posts, includes links to social media
+ This section gets removed when screen size is smaller than 1100px */
+.about-section{
+  margin-top: 4em;
+  text-align: center;
+  font-weight: 900;
+}
+
+.about-description{
+  margin-top:15em;
+  border-left: 0.5em solid #0e8a22;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+ul.my-links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.my-links{
+  float: left;
+  padding: 0.4em;
+}
+
+ /* TABLET CONFIG 
+ remove about section and place on top bar when screen is small 
+ also change font sizes a bit  */
+@media screen and (max-width: 1100px) {
+
+.nomobile {
+    display: none;
+}
+
+#all-posts-title{
+  margin: auto;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 1em;
+}
+
+#all-posts {
+  margin: auto;
+  text-align: center;
+}
+
+div#post-title{
+  margin: auto;
+  padding-top: 0px;
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+div#post-description{
+  margin: auto;
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+div#post-date{
+  margin: auto;
+  text-align: center;
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+img.post-image{
+  height: 200px;
+  width: 200px;
+  border-radius: 15px 50px;
+  float: none;
+  margin-right: 1em;
+  display: block;
+  margin: auto;
+  }
+
+#blank-post-image {
+  display: none;
+  }
+}
+
+
+ /* MOBILE CONFIG 
+ remove about section and place on top bar when screen is small 
+ also change font sizes a bit  */
+ @media screen and (max-width: 480px) {
+
+  .nomobile {
+      display: none;
+  }
+  
+  #all-posts-title{
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 1em;
+  }
+  
+  #all-posts {
+    margin: auto;
+    text-align: center;
+  }
+  
+  div#post-title{
+    margin: auto;
+    padding-top: 0px;
+    font-family: Times, Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  div#post-description{
+    margin: auto;
+    font-family: Times, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  div#post-date{
+    margin: auto;
+    text-align: center;
+    font-family: Times, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    overflow-wrap: break-word;
+  }
+  
+  img.post-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px 50px;
+    float: none;
+    margin-right: 1em;
+    display: block;
+    margin: auto;
+    }
+  
+  #blank-post-image {
+    display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+ div#all-posts{
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+} 
+
+ div#post-title{
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+div#post-description{
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+div#post-date{
+  text-align: right;
+  font-family: Times, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}  */

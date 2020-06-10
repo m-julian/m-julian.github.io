@@ -1,0 +1,126 @@
+ /* Overwrite some notebook.css and highlight.css values  */
+
+.highlight .nn { color: rgb(93, 29, 196); font-weight: bold}  /*Name.Namespace*/
+
+
+/* output green line divider */
+div.output_wrapper {
+  /* border-top-style: solid; */
+  border-bottom-style: solid;
+  /* border-top-color: rgba(46, 139, 86, 0.600); */
+  border-bottom-color: rgba(46, 139, 86, 0.600);
+  border-width: 2px;
+  margin-top: 5px;
+}
+
+
+/* sticky navigation bar */
+#navigation{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-top: 1em;
+  z-index: 20;
+}
+
+/* make notebook centered on page */
+.wrapper{
+  max-width: calc(1200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+/* anchor link display correctly */
+.anchor-link {
+  opacity: 0.1;
+	transition-property: opacity;
+}
+.anchor-link:hover {
+	opacity: 1;
+}
+:target::before {
+  content: "";
+  display: block;
+  margin-top: -75px;
+  height: 75px;
+}
+
+
+.rss-subscribe {
+  display: none;
+}
+
+
+
+/* .button#home .button#about .button#topics{
+  transition-duration: 0.4s;
+}
+
+.button#home:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.col-1#home{
+  margin-right: 0em;
+  padding-right: 0em;
+}
+
+.button#topics:hover {
+  background-color: #1fb695;
+  color: white;
+}
+div.col-1#topics{
+  margin-left: 0em;
+  padding-left: 0em;
+}
+
+.button#about:hover {
+  background-color: #1b398a;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+ */
+
+
+ /* highlight.css 
+ .highlight .nn { color: rgb(93, 29, 196); font-weight: bold}  Name.Namespace 
+
+
+
+ notebook.css 
+.output {
+    background-color: rgba(210, 236, 217, 0.466);
+}
+
+ Custom Functionality 
+
+body {
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+Outputs
+div.output {
+  margin-top: 5px;
+}
+
+Pandas Tables
+ table {
+  border: 1px solid black;
+} 
+th td{
+  text-align: center;
+  padding: 1px;
+}
+tr:hover {
+  color: white;
+  background-color: rgb(85, 87, 104);}  */
