@@ -16,6 +16,7 @@ div#nb-container{
   max-width: 80%
 }
 
+/* anchor link setup */
 .anchor-link {
   opacity: 0.2;
 	transition-property: opacity;
@@ -23,6 +24,7 @@ div#nb-container{
 .anchor-link:hover {
 	opacity: 1;
 }
+/* makes it so anchor link does not cut out from title by going under nav bar */
 :target::before {
   content: "";
   display: block;

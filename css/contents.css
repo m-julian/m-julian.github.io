@@ -25,3 +25,19 @@ li.content{
     font-size: 1.3em;
     list-style: none;
 }
+
+/* anchor link setup */
+.anchor-link {
+    opacity: 0.1;
+      transition-property: opacity;
+  }
+  .anchor-link:hover {
+      opacity: 1;
+  }
+  /* makes it so anchor link does not cut out from title by going under nav bar */
+  :target::before {
+    content: "";
+    display: block;
+    margin-top: -4em;
+    height: 4em;
+  }
