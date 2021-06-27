@@ -28,7 +28,7 @@ twitter_username: ""
 github_username:  m-julian
 
 # Build settings
-theme: minima
+theme: minima # not really used as I have modified _includes/layouts, etc.
 plugins:
   - jekyll-feed
 
@@ -58,22 +58,23 @@ plugins:
 ### OWN CONFIG FOR COLLECTIONS
 # COLLECTIONS ARE FOUND IN /collections/ directory
 
+# see https://jekyllrb.com/docs/collections/ for collections
 collections_dir: collections
 
 collections:
+  # define a notebook collections (directory needs to begin with underscore eg. _notebooks)
   notebooks:
-    output: true
+    output: true # needs to be here in order for Jekyll to write collection to file
     permalink: /:collection/:year/:title:output_ext
 
-
-
+# defaults for Jekyll frontmatter at the top of a .html file that is going to be on the website
 defaults:
   -
     scope:
       path: "/collections/_notebooks/"
     values:
       layout: "notebook"
-      image: "/assets/images/default_image.png"
+      image: "/assets/images/default_image.png" # display white if there is no image
 
   -
     scope:
