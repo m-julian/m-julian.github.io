@@ -18,7 +18,7 @@ div#nb-container{
 
 /* anchor link setup */
 .anchor-link {
-  opacity: 0.2;
+  opacity: 0.1;
 	transition-property: opacity;
 }
 .anchor-link:hover {
