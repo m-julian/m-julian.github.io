@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - 'dev'
-  paths:
-      - 'texts/jupyter_notebooks/**.ipynb'
+    paths:
+        - 'texts/jupyter_notebooks/**.ipynb'
 jobs:
   convert-notebook:
     runs-on: ubuntu-latest
