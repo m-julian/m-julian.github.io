@@ -20,7 +20,7 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
       - name: Install nbconvert
-        run: pip install nbconvert
+        run: pip install -r requirements.txt
       # part taken from https://stackoverflow.com/a/74268200/11699003
       - name: Get changed files
         id: changed-files
