@@ -35,6 +35,6 @@ jobs:
             for file in ${{ steps.changed-files.outputs.changed_files }}; do
                 echo "$file was changed, converting to notebook."
                 python scripts/jupyter_notebook_convert.py --nbpath $file
-                var1 = dirname $file
+                var1 = $(dirname $file)
                 echo $var1
             done
