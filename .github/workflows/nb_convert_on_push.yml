@@ -14,24 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      
+
       # part taken from https://stackoverflow.com/a/74268200/11699003
+      with:
+        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+        - name: Get changed files
+          id: changed-files
+          run: |
+              if ${{ github.event_name == 'pull_request' }}; then
+                  echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
+              else
+                  echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
+              fi
         with:
-          fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
-      - name: Get changed files
-        id: changed-files
-        run: |
-            if ${{ github.event_name == 'pull_request' }}; then
-                echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
-            else
-                echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
-            fi
-      - name: Convert changed notebooks to html
-        with:
-        python-version: '3.10'
-        run: |
-            for file in ${{ steps.changed-files.outputs.changed_files }}; do
-                echo "$file was changed, converting to notebook."
-                python scripts/jupyter_notebook_convert $file.ipynb
-                echo dir($file.ipynb)
-            done
+          python-version: '3.10'
+        - name: Convert changed notebooks to html
+          run: |
+              for file in ${{ steps.changed-files.outputs.changed_files }}; do
+                  echo "$file was changed, converting to notebook."
+                  python scripts/jupyter_notebook_convert $file.ipynb
+                  echo dir($file.ipynb)
+              done
