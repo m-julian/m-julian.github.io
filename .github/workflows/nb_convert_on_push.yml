@@ -31,7 +31,7 @@ jobs:
         run: |
             for file in ${{ steps.changed-files.outputs.changed_files }}; do
                 echo "$file was changed, converting to notebook."
-                python scripts/jupyter_notebook_convert $file.ipynb
+                python scripts/jupyter_notebook_convert.py $file
                 var1 = dirname $file
                 echo $var1
             done
