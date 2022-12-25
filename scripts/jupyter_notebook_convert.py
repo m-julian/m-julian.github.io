@@ -51,7 +51,7 @@ def nb2html(nb_filepath):
     """
     exporter = HTMLExporter()
     # https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html
-    exporter.template_file = 'basic' # Simplified HTML, useful for embedding in webpages, blogs, etc. This excludes HTML headers.
+    exporter.template_name = 'basic' # Simplified HTML, useful for embedding in webpages, blogs, etc. This excludes HTML headers.
     output, resources = exporter.from_filename(nb_filepath)
     return output
 
