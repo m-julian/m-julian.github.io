@@ -1,7 +1,7 @@
 {% comment %} Liquid comments are written like this {% endcomment %}
 {% include home_head.html %}
-
   <body>
+{% include navigation_bar.html %}
     <div class="container-fluid">
       <div class="row">
         <div class="col-3 nomobile">
@@ -16,7 +16,7 @@
           <!--loop over collections and get first post in each collection-->
           {% for collection in site.collections %}
           {% assign sorted = site[collection.label] | sort: 'date' | reverse %}
-              {% for post in sorted limit:2 %}
+              {% for post in sorted limit:4 %}
               {% if forloop.length != 0 and post.image != "/assets/images/default_image.png" %}
                 <div class="clearfix individual-post">
                 <a href="{{post.url}}"> <!--or try post.path -->

@@ -1,13 +1,13 @@
 {% include notebook_head.html %}
-
-  <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <div class="container" id="nb-container">
-          <h4 id="post-date">Date Published: {{ page.date | date_to_long_string }}</h4>
-          {{content}}
-        </div>
-      </div>
+<body>
+{% include navigation_bar.html %}
+<div id="page-container">
+  <div id="content-wrap">
+    <div class="container" id="nb-container">
+      <h4 id="post-date">Date Published: {{ page.date | date_to_long_string }}</h4>
+      {{content}}
     </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>
