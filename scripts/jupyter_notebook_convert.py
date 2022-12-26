@@ -8,7 +8,6 @@ Example useage:
 python new_convert.py --nbpath <filename>.ipynb
 ```
 """
-import os
 from pathlib import Path
 import argparse
 from nbconvert import HTMLExporter
@@ -16,12 +15,8 @@ from nbconvert.preprocessors import CSSHTMLHeaderPreprocessor
 from bs4 import BeautifulSoup
 import datetime
 
-# Get the base directory of this project relative to this script
-BASE_DIR = os.path.dirname(os.path.realpath(__file__))
-
 # Get input arguments
-
-today = datetime.date.today()
+TODAY = datetime.date.today()
 
 parser = argparse.ArgumentParser(
     description='Convert notebook to Jekyll blogpost.')
@@ -37,6 +32,11 @@ parser.add_argument(
 parser.add_argument(
     '--description', type=str,
     help='Description of the blogpost.')
+parser.add_argument(
+    '--base_dir', type=str,
+    help="Directory where to write converted notebook",
+    default=Path(__file__).parent
+)
 
 
 def nb2html(nb_filepath):
@@ -104,7 +104,7 @@ def set_anchor_links(soup: BeautifulSoup):
         # Insert link symbol as tag
         a_tag.append(soup.new_tag("i", attrs={"class": "fas fa-sm fa-link"}))
 
-def save_conversion(html_str, nbpath, date):
+def save_conversion(html_str, nbpath, base_dir, date):
     """
     Save converted notebook file to Jekyll templated html file.
 
@@ -116,8 +116,7 @@ def save_conversion(html_str, nbpath, date):
     Effect:
     """
     filename = Path(nbpath).stem
-    output_path = os.path.join(
-        BASE_DIR, f'{date}-{filename}.html')
+    output_path = Path(base_dir) / f'{date}-{filename}.html'
     print('output_path: ', output_path)
     with open(output_path, 'w+') as f:
         f.write(html_str)
@@ -132,7 +131,7 @@ def main():
     set_anchor_links(soup)
     add_table_class(soup)
     html_str = soup.prettify()
-    save_conversion(html_str, args.nbpath, today)
+    save_conversion(html_str, args.nbpath, args.base_dir, TODAY)
 
 if __name__ == "__main__":
     main()
