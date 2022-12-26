@@ -11,7 +11,6 @@ python new_convert.py --nbpath <filename>.ipynb
 from pathlib import Path
 import argparse
 from nbconvert import HTMLExporter
-from nbconvert.preprocessors import CSSHTMLHeaderPreprocessor
 from bs4 import BeautifulSoup
 import datetime
 
@@ -66,6 +65,19 @@ def remove_output_stderr(soup):
         Changes soup object to have divs with class `output_stderr` removed.
     """
     for div in soup.find_all('div', {'class':'output_stderr'}):
+        div.decompose()
+
+def remove_input_area(soup):
+    """
+    Remove the input area elements from the notebook
+
+    Args:
+        soup (BeautifulSoup): HTML parsed notebook.
+
+    Effect:
+        Changes soup object to have divs with class `output_stderr` removed.
+    """
+    for div in soup.find_all('div', {'class':'jp-InputPrompt jp-InputArea-prompt'}):
         div.decompose()
 
 def add_table_class(soup):
