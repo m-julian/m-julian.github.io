@@ -41,5 +41,7 @@ jobs:
                 if [[ -f "$file" ]]; then
                   echo "$file was changed, converting to notebook."
                   python scripts/jupyter_notebook_convert.py --nbpath $file
+                else
+                  echo "$file was deleted, do not need to convert."
                 fi
             done
