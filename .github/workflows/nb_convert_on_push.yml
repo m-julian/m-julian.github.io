@@ -12,16 +12,20 @@ jobs:
   convert-notebook:
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v3
         with:
           fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
           cache: 'pip'
+
       - name: Install nbconvert
         run: pip install -r requirements.txt
       # part taken from https://stackoverflow.com/a/74268200/11699003
+      # TODO: add way to parse only create files that exists. Deleted notebooks cannot be converted to html.
       - name: Get changed files
         id: changed-files
         run: |
@@ -30,11 +34,12 @@ jobs:
             else
                 echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
             fi
+
       - name: Convert changed notebooks to html
         run: |
             for file in ${{ steps.changed-files.outputs.changed_files }}; do
+                if [[ -f "$file"]]; then
                 echo "$file was changed, converting to notebook."
                 python scripts/jupyter_notebook_convert.py --nbpath $file
-                var1=$(dirname $file)
-                echo $var1
+                fi
             done
