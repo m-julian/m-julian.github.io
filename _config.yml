@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Y.M. Blog # the website title (if blank, full name will be used instead)
+title: Y.M. # the website title (if blank, full name will be used instead)
 first_name: Yulian
 middle_name:
 last_name: Manchev
@@ -132,7 +132,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Y.M. Blog # blog_name will be displayed in your blog page
+blog_name: Y.M. # blog_name will be displayed in your blog page
 blog_description:
 permalink: /blog/:year/:month/:day/:title/
 lsi: false # produce an index for related posts
