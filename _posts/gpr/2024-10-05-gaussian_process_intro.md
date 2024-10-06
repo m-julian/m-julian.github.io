@@ -5,4 +5,6 @@ date: 2024-10-05 14:51:30
 description: Introduction to Gaussian processes
 ---
 
+{::nomarkdown}
 {% jupyter_notebook "/jupyter_notebooks/gpr/gp.ipynb" %}
+{:/nomarkdown}
