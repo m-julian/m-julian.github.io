@@ -1,16 +1,18 @@
 FROM ruby:latest
 ENV DEBIAN_FRONTEND noninteractive
 
-Label MAINTAINER Amir Pourmand
+LABEL MAINTAINER Amir Pourmand
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
     imagemagick \
     build-essential \
     zlib1g-dev \
-    jupyter-nbconvert \
+    pipx \
     inotify-tools procps && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* && \
+    PIPX_HOME=/usr/local PIPX_BIN_DIR=/usr/local/bin pipx install jupyter-core && \
+    PIPX_HOME=/usr/local PIPX_BIN_DIR=/usr/local/bin pipx install nbconvert
 
 
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
