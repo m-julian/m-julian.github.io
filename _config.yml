@@ -643,7 +643,10 @@ jsonresume:
   - interests
   - references
 
+###########################################################
 # jekyll-jupyter-notebook settings
+# https://github.com/red-data-tools/jekyll-jupyter-notebook
+###########################################################
 
 jupyter_notebook:
-  prompt: false # remove In/Out Prompts from Jupyter notebook
+  prompt: false # remove In/Out Prompts from Jupyter notebook renders
