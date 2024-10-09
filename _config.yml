@@ -642,3 +642,8 @@ jsonresume:
   - languages
   - interests
   - references
+
+# jekyll-jupyter-notebook settings
+
+jupyter_notebook:
+  prompt: false # remove In/Out Prompts from Jupyter notebook
