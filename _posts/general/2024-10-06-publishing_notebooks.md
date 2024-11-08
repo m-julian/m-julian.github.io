@@ -3,6 +3,7 @@ layout: post
 title: How to publish a jupyter notebook on Github pages with Jekyll
 date: 2024-10-06 00:07:04
 description: Contains instructions and information for setting up jupyter notebook support on Github pages websites with Jekyll.
+tags: code
 ---
 
 # Adding Jupyter Notebook Support to GitHub Pages
@@ -18,9 +19,9 @@ Install this gem, and then you will be able to add jupyter notebooks to your Git
 Linking is done by:
 
 ```text
-{percentage jupyter_notebook "path_to_notebook.ipynb" percentage}
+{percent jupyter_notebook "path_to_notebook.ipynb" percent}
 ```
-where `percentage` above needs to be replaced by `%`, so that it is proper liquid code. This will insert the Jupyter notebook into the new post.
+where `percent` above needs to be replaced by `%`, so that it is proper liquid code. This will insert the Jupyter notebook into the new post.
 
 # Support for Latex Equations Numbering in Jupyter Notebook
 
