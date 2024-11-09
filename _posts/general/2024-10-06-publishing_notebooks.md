@@ -21,6 +21,7 @@ Linking is done by:
 ```text
 {percent jupyter_notebook "path_to_notebook.ipynb" percent}
 ```
+
 where `percent` above needs to be replaced by `%`, so that it is proper liquid code. This will insert the Jupyter notebook into the new post.
 
 # Support for Latex Equations Numbering in Jupyter Notebook
