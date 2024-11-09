@@ -30,14 +30,14 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.436055"
-     inkscape:cx="193.5859"
-     inkscape:cy="126.38792"
-     inkscape:window-width="1551"
-     inkscape:window-height="724"
-     inkscape:window-x="125"
-     inkscape:window-y="41"
-     inkscape:window-maximized="0"
+     inkscape:zoom="2.0308885"
+     inkscape:cx="148.45719"
+     inkscape:cy="114.97431"
+     inkscape:window-width="1920"
+     inkscape:window-height="978"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs177359" />
@@ -57,14 +57,14 @@
     <text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.132291"
-       x="38.817589"
-       y="26.958982"
+       x="37.348015"
+       y="27.020889"
        id="text44509"><tspan
          sodipodi:role="line"
          id="tspan44507"
          style="stroke-width:0.132291"
-         x="38.817589"
-         y="26.958982">A,B</tspan></text>
+         x="37.348015"
+         y="27.020889">A ∩ B</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.132291"
@@ -75,7 +75,7 @@
          id="tspan13136"
          style="stroke-width:0.132291"
          x="12.113677"
-         y="26.993979">A | B'</tspan></text>
+         y="26.993979">A ∩ B'</tspan></text>
     <circle
        style="display:inline;opacity:0.5;fill:#0000ff;stroke:none;stroke-width:0.5;stroke-dashoffset:0.0982677;stroke-opacity:1"
        id="path10689-4"
@@ -137,25 +137,25 @@
     <text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.132291"
-       x="16.581514"
-       y="63.400738"
+       x="14.867945"
+       y="63.522408"
        id="text44509-1"><tspan
          sodipodi:role="line"
          id="tspan44507-1"
          style="stroke-width:0.132291"
-         x="16.581514"
-         y="63.400738">A,B</tspan></text>
+         x="14.867945"
+         y="63.522408">A ∩ B</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;display:inline;stroke-width:0.132291"
-       x="35.663425"
-       y="63.097546"
+       x="34.422634"
+       y="63.268738"
        id="text13138-4"><tspan
          sodipodi:role="line"
          id="tspan13136-6"
          style="stroke-width:0.132291"
-         x="35.663425"
-         y="63.097546">B | A'</tspan></text>
+         x="34.422634"
+         y="63.268738">B ∩ A'</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.264583"
