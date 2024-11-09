@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="95.850533mm"
+   height="36.496422mm"
+   viewBox="0 0 95.850533 36.496422"
+   version="1.1"
+   id="svg888"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="b_given_a.svg"
+   inkscape:export-filename="/home/julian/Documents/GitHub/m-julian.github.io/jupyter_notebooks/probability/probability_theory/images/b_given_a.png"
+   inkscape:export-xdpi="149.92799"
+   inkscape:export-ydpi="149.92799"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview890"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.436055"
+     inkscape:cx="110.37182"
+     inkscape:cy="125.69157"
+     inkscape:window-width="1920"
+     inkscape:window-height="978"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs885" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.743571,-96.287697)">
+    <path
+       id="path10689-4-1"
+       style="opacity:0.5;fill:#0000ff;stroke:none;stroke-width:0.499999;stroke-dashoffset:0.0982677;stroke-opacity:1"
+       d="m 67.823091,96.626116 a 18.07914,18.07914 0 0 0 -18.07952,18.079004 18.07914,18.07914 0 0 0 18.07952,18.079 18.07914,18.07914 0 0 0 13.30513,-5.84305 12.535644,12.535644 0 0 1 -9.14363,-12.05973 12.535644,12.535644 0 0 1 9.40201,-12.12897 18.07914,18.07914 0 0 0 -13.56351,-6.126254 z" />
+    <path
+       id="path10689"
+       style="opacity:0.894438;fill:#550055;fill-opacity:0.752941;stroke:none;stroke-width:0.499999;stroke-dashoffset:0.0982677;stroke-opacity:1"
+       d="m 87.810671,102.89116 a 12.535644,12.535644 0 0 0 -9.40201,12.12898 12.535644,12.535644 0 0 0 9.14363,12.05973 18.07914,18.07914 0 0 0 4.77387,-12.23595 18.07914,18.07914 0 0 0 -4.51549,-11.95276 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.132291"
+       x="81.285255"
+       y="115.79739"
+       id="text44509"><tspan
+         sodipodi:role="line"
+         id="tspan44507"
+         style="stroke-width:0.132291"
+         x="81.285255"
+         y="115.79739">A ∩ B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.132291"
+       x="56.050922"
+       y="115.77048"
+       id="text13138"><tspan
+         sodipodi:role="line"
+         id="tspan13136"
+         style="stroke-width:0.132291"
+         x="56.050922"
+         y="115.77048">A ∩ B'</tspan></text>
+    <circle
+       style="display:inline;opacity:0.5;fill:#0000ff;stroke:none;stroke-width:0.5;stroke-dashoffset:0.0982677;stroke-opacity:1"
+       id="path10689-4"
+       cx="127.51496"
+       cy="114.36684"
+       r="18.07914" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;display:inline;stroke-width:0.132291"
+       x="122.25492"
+       y="115.90594"
+       id="text13138-9"><tspan
+         sodipodi:role="line"
+         id="tspan13136-2"
+         style="stroke-width:0.132291"
+         x="122.25492"
+         y="115.90594">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="98.746727"
+       y="116.6464"
+       id="text180042"><tspan
+         sodipodi:role="line"
+         id="tspan180040"
+         style="stroke-width:0.264583"
+         x="98.746727"
+         y="116.6464">=</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="72.571785"
+       y="116.74322"
+       id="text180042-5-6"><tspan
+         sodipodi:role="line"
+         id="tspan180040-0-4"
+         style="stroke-width:0.264583"
+         x="72.571785"
+         y="116.74322">+</tspan></text>
+  </g>
+</svg>
