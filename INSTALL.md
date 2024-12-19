@@ -52,7 +52,16 @@ You need to take the following steps to get `al-folio` up and running on your lo
 
 ```bash
 $ docker compose pull
+$ docker compose build # this is not in the original install.md but I had to add it otherwise I get an error
 $ docker compose up
+```
+
+This is the error I get if I just run `docker compose pull` and `docker compose up`.
+
+```
+jekyll-1  | Entry point script running
+jekyll-1  | bundler: failed to load command: jekyll (/usr/local/bundle/bin/jekyll)
+jekyll-1  | /usr/local/bundle/gems/bundler-2.5.23/lib/bundler/resolver.rb:354:in `raise_not_found!': Could not find gem 'mini_racer' in locally installed gems. (Bundler::GemNotFound)
 ```
 
 Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.
