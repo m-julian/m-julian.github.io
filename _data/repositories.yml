@@ -6,6 +6,6 @@ repo_description_lines_max: 2
 github_repos:
   - popelier-group/ichor
   - m-julian/ALFVisualizer
-  - PhD-Thesis
-  - k3s-ansible
-  - mathematics_for_machine_learning_solutions
+  - m-julian/PhD-Thesis
+  - m-julian/k3s-ansible
+  - m-julian/mathematics_for_machine_learning_solutions
