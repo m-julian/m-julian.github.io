@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .bg  { fill: #0f1623; }
+        .hex { fill: #2dd4bf; }
+        .dot { fill: #fbbf24; }
+        .line { fill: none; stroke: #0f1623; }
+      }
+      @media (prefers-color-scheme: light) {
+        .bg  { fill: #ffffff; }
+        .hex { fill: #0d9488; }
+        .dot { fill: #d97706; }
+        .line { fill: none; stroke: #ffffff; }
+      }
+    </style>
+  </defs>
+
+  <rect width="100" height="100" rx="18" class="bg"/>
+  <polygon points="50,8 88,29 88,71 50,92 12,71 12,29" class="hex"/>
+
+  <!-- Lines first, dots on top -->
+  <line x1="38" y1="40" x2="62" y2="40" class="line" stroke-width="4"/>
+  <line x1="38" y1="40" x2="50" y2="63" class="line" stroke-width="4"/>
+  <line x1="62" y1="40" x2="50" y2="63" class="line" stroke-width="4"/>
+
+  <!-- Two dots on top row -->
+  <circle cx="38" cy="40" r="10" class="dot"/>
+  <circle cx="62" cy="40" r="10" class="dot"/>
+  <!-- One dot on bottom -->
+  <circle cx="50" cy="63" r="10" class="dot"/>
+</svg>
