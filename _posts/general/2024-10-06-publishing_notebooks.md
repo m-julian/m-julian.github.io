@@ -3,7 +3,7 @@ layout: post
 title: How to publish a jupyter notebook on Github pages with Jekyll
 date: 2024-10-06 00:07:04
 description: Contains instructions and information for setting up jupyter notebook support on Github pages websites with Jekyll.
-tags: code
+tags: code, misc
 ---
 
 # Adding Jupyter Notebook Support to GitHub Pages

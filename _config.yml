@@ -303,8 +303,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["machine-learning", "probability", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["physics", "chemistry"] # these categories will be displayed on the front page of your blog
+display_tags: ["machine-learning", "code", "math"] # these tags will be displayed on the front page of your blog
+display_categories: ["tutorials"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
