@@ -65,7 +65,14 @@ let applyTheme = () => {
   // Set jupyter notebooks themes.
   let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
   for (let i = 0; i < jupyterNotebooks.length; i++) {
-    let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
+    let iframe = jupyterNotebooks[i].getElementsByTagName("iframe")[0];
+    let bodyElement;
+    try {
+      bodyElement = iframe.contentWindow.document.body;
+    } catch (e) {
+      continue;
+    }
+    if (!bodyElement) continue;
     if (theme == "dark") {
       bodyElement.setAttribute("data-jp-theme-light", "false");
       bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Dark");
