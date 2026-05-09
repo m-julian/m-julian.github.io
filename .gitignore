@@ -13,3 +13,4 @@ vendor
 .idea
 *-checkpoint.ipynb
 package-lock.json
+.venv
